@@ -53,7 +53,7 @@ export default function About() {
             <div className="relative">
               <div className="w-44 h-44 md:w-52 md:h-52 rounded-2xl overflow-hidden border-2 border-violet-500/30 shadow-[0_0_40px_rgba(139,92,246,0.2)]">
                 <img
-                  src="shaju.png"
+                  src={`${import.meta.env.BASE_URL}shaju.png`}
                   alt="Shajunisha Ibrahim"
                   className="w-full h-full object-cover object-top"
                 />
