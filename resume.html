@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>N. Shajunisha Ibrahim — Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 9.5pt;
+      color: #111;
+      background: #fff;
+      width: 8.27in;
+      margin: 0 auto;
+      padding: 0.28in 0.44in;
+      line-height: 1.28;
+    }
+
+    /* HEADER */
+    .header { text-align: center; margin-bottom: 7px; }
+    .header h1 { font-size: 17pt; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+    .header .title { font-size: 9.5pt; color: #444; margin: 2px 0 4px; }
+    .contact-line { font-size: 8.5pt; color: #222; }
+    .contact-line a { color: #111; text-decoration: none; }
+
+    /* SECTION */
+    .section { margin-top: 6px; }
+    .section-title {
+      font-size: 9pt; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 1.2px;
+      border-bottom: 1.5px solid #111;
+      padding-bottom: 2px; margin-bottom: 4px;
+    }
+
+    /* ALL BODY TEXT — consistent left + justified right */
+    p, .skill-line, .pub {
+      font-size: 9.5pt;
+      text-align: justify;
+      margin-bottom: 2px;
+    }
+    .skill-line strong, .pub strong { font-weight: 700; }
+
+    /* ENTRY HEADERS */
+    .entry { margin-bottom: 5px; }
+    .entry-header { display: flex; justify-content: space-between; align-items: baseline; }
+    .entry-header .org { font-weight: 700; font-size: 10pt; }
+    .entry-header .date { font-size: 8.5pt; color: #333; white-space: nowrap; }
+    .entry-sub { display: flex; justify-content: space-between; font-size: 8.5pt; color: #333; margin-bottom: 3px; }
+    .entry-sub .role { font-style: italic; }
+
+    /* BULLETS — start and end same as all other text, no indent */
+    ul { list-style: none; padding: 0; margin: 0; }
+    ul li {
+      display: flex;
+      gap: 6px;
+      align-items: flex-start;
+      font-size: 9.5pt;
+      margin-bottom: 2px;
+    }
+    ul li::before {
+      content: '•';
+      flex-shrink: 0;
+      color: #444;
+      line-height: 1.28;
+    }
+    ul li span { text-align: justify; flex: 1; }
+
+    /* PROJECTS */
+    .project { margin-bottom: 5px; }
+    .project-header { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; }
+    .project-name { font-weight: 700; font-size: 9.5pt; }
+    .project-tech { font-size: 8.5pt; color: #444; font-style: italic; white-space: nowrap; }
+
+    @media print {
+      @page { size: A4; margin: 0; }
+      body { padding: 0.28in 0.44in; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>N. Shajunisha Ibrahim</h1>
+    <div class="title">Full Stack Developer &nbsp;|&nbsp; AI Automation &amp; Workflow Specialist</div>
+    <div class="contact-line">
+      14 Ram Nagar, 1st Street, Tiruppur, Tamil Nadu &nbsp;|&nbsp;
+      +91 96556 11884 &nbsp;|&nbsp;
+      <a href="mailto:shajunoordeen@gmail.com">shajunoordeen@gmail.com</a> &nbsp;|&nbsp;
+      <a href="https://github.com/shajuibrahim">github.com/shajuibrahim</a> &nbsp;|&nbsp;
+      <a href="https://www.linkedin.com/in/shaju-ibrahim-a3b3923ab">linkedin.com/in/shaju-ibrahim</a> &nbsp;|&nbsp;
+      <a href="https://shajuibrahim.github.io">shajuibrahim.github.io</a>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p>Full Stack Developer with 5+ years at Synergy Technology delivering 4 production-ready software solutions — desktop accounting system, corporate website, CRM workflow, and AI-powered chatbot integrating 3 platforms. Holds M.Tech in IT (8.64 CGPA). Certified in Full Stack Development (Udemy) and advancing in AI Agent development (be10x). Authored 1 internationally published research paper and presented at 3 conferences including IEEE.</p>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skill-line"><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+), React.js &nbsp;&nbsp; <strong>Backend:</strong> Node.js, PostgreSQL, SQLite &nbsp;&nbsp; <strong>Desktop:</strong> Electron.js</div>
+    <div class="skill-line"><strong>Automation &amp; AI:</strong> n8n, AI Agents, Workflow Automation, Prompt Engineering &nbsp;&nbsp; <strong>Blockchain:</strong> Motoko (ICP)</div>
+    <div class="skill-line"><strong>Tools:</strong> Git, GitHub, GitHub Pages, Adobe Photoshop</div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="org">Synergy Technology</span>
+        <span class="date">2019 – Present &nbsp;|&nbsp; Palani, Tamil Nadu</span>
+      </div>
+      <div class="entry-sub">
+        <span class="role">Support Engineer → Full Stack Developer</span>
+      </div>
+      <ul>
+        <li><span>Designed and deployed www.mysynergy.in — a 6-page responsive corporate website, establishing the company's 1st digital identity and reaching 100+ prospective clients.</span></li>
+        <li><span>Architected SynLedger, a desktop accounting system with 5 core modules (journal, ledger, trial balance, P&amp;L, balance sheet) using Electron.js + SQLite, replacing 100% of manual bookkeeping.</span></li>
+        <li><span>Engineered an end-to-end CRM workflow solution consolidating client data across all support touchpoints for a 10+ member team.</span></li>
+        <li><span>Automated communications across 3 platforms (Gmail, Google Calendar, Telegram) via n8n AI chatbot, cutting manual response time by 70%+.</span></li>
+        <li><span>Resolved 500+ technical support tickets over 5 years with 100% SLA compliance.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Key Projects</div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">SynLedger — Desktop Accounting Software</span>
+        <span class="project-tech">Electron.js · SQLite · HTML/CSS/JS</span>
+      </div>
+      <ul>
+        <li><span>Built 5 accounting modules (journal, ledger, trial balance, P&amp;L, balance sheet) with double-entry logic, print-to-PDF export, and real-time reports — 100% internal adoption.</span></li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">AI Business Chatbot — n8n Workflow Automation</span>
+        <span class="project-tech">n8n · Gmail API · Google Calendar · Telegram Bot</span>
+      </div>
+      <ul>
+        <li><span>Unified 3 business platforms into 1 AI chatbot with 10+ nodes — automated 100% of routine queries and cut daily manual effort by 70%+.</span></li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">Corporate Website — www.mysynergy.in</span>
+        <span class="project-tech">HTML5 · CSS3 · JavaScript</span>
+      </div>
+      <ul>
+        <li><span>Delivered a 6-page responsive website as the company's 1st online presence — full UI/UX design, content, and deployment.</span></li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">CRM Workflow System (Internal) — Synergy Technology</span>
+        <span class="project-tech">Full Stack · Workflow Automation</span>
+      </div>
+      <ul>
+        <li><span>Centralised CRM integrating client tracking, support ticketing, and workflow management for 10+ team members.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="org">M.Tech — Information Technology</span>
+        <span class="date">2014 &nbsp;|&nbsp; CGPA: 8.64 / 10</span>
+      </div>
+      <div class="entry-sub"><span>Sathyabama University, Chennai</span></div>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="org">BE — Information Technology</span>
+        <span class="date">2012 &nbsp;|&nbsp; CGPA: 8.48 / 10</span>
+      </div>
+      <div class="entry-sub"><span>Avinashilingam Institute for Home Science &amp; Higher Education for Women, Coimbatore</span></div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <ul>
+      <li><span>The Complete Full-Stack Web Development Bootcamp (62 hrs) — Udemy · Dr. Angela Yu · Completed April 2026</span></li>
+      <li><span>AI Agenting Career Acceleration Program — be10x · Advanced AI Training (2026)</span></li>
+      <li><span>Java Technology Training — Apollo Computer Education Ltd, Coimbatore</span></li>
+      <li><span>Cloud Computing Workshop — Microsoft · Amrita University, Coimbatore</span></li>
+    </ul>
+  </div>
+
+  <!-- RESEARCH -->
+  <div class="section">
+    <div class="section-title">Research &amp; Publications</div>
+    <ul>
+      <li><span><strong>Journal:</strong> "Enforcement of Rough Fuzzy Clustering Based on Correlation Analysis" — <em>International Arab Journal of Information Technology</em></span></li>
+      <li><span>"Correlative Analysis of Soft Clustering Algorithms" — IEEE 5th Int'l Conf. on Advanced Computing, Anna University, Chennai (IEEE Xplore).</span></li>
+      <li><span>"Implementing Rough Fuzzy C-Means for Different Datasets using MATLAB" — National Conf. on Advances in Computing &amp; Technology, VIT University, Chennai.</span></li>
+    </ul>
+  </div>
+
+</body>
+</html>
